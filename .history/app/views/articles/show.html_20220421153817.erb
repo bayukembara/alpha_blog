@@ -2,6 +2,6 @@
 <%= render @article %>
 <div>
   <%= link_to "Edit this article", edit_article_path(@article) %> |
-  <%= link_to "Back to articles", articles_path%>
+  <%= link_to "Back to articles", articles_path, data: { confirm: 'Are you sure?' } %>
   <%= button_to "Destroy this article", @article, method: :delete %>
 </div>
